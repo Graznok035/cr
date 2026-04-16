@@ -57,28 +57,48 @@
     $valjund = mysqli_query($yhendus, $paring);
 
     while($rida = mysqli_fetch_assoc($valjund)){
+<<<<<<< HEAD
 //        var_dump($rida);
     
     
 ?>
 
 
+=======
+        // var_dump($rida);
+?>
+
+>>>>>>> 57befb2963cb260a7015e2f5090aa455a6223954
     <div class="col">
         <div class="card h-100">
         <img src="https://loremflickr.com/400/250/<?php echo $rida['mark']; ?>" class="card-img-top" alt="audi">
         <div class="card-body">
             <h5 class="card-title"><?php echo $rida['mark']." ".$rida['model']; ?></h5>
             <p><?php echo $rida['year']; ?></p>
+<<<<<<< HEAD
             <p>Mootor <?php echo $rida['engine']; ?></p>
             <p>Kütus: <?php echo $rida['fuel']; ?></p>
             <p>Hind: <?php echo $rida['price']; ?>EUR/päev</p>
+=======
+            <p>Mootor: <?php echo $rida['engine']; ?></p>
+            <p>Kütus: <?php echo $rida['fuel']; ?></p>
+            <p>Hind: <?php echo $rida['price']; ?>€/päev</p>
+>>>>>>> 57befb2963cb260a7015e2f5090aa455a6223954
             <a href="single_car.php" class="btn btn-dark w-100">Rendi</a>
         </div>
         </div>
     </div>
+<<<<<<< HEAD
     <?php
       }
     ?>
+=======
+
+    <?php
+       }
+    ?>
+
+>>>>>>> 57befb2963cb260a7015e2f5090aa455a6223954
     </div>
 </div>
     <!-- /sisu -->

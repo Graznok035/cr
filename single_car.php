@@ -47,6 +47,7 @@
     </div>
 </nav>
     <!-- /menüü -->
+<<<<<<< HEAD
 <?php
     $paring = "SELECT * FROM cars WHERE id=1";
     $valjund = mysqli_query($yhendus, $paring);
@@ -55,10 +56,21 @@
     
     
 ?>
+=======
+
+<?php
+    $paring = "SELECT * FROM cars WHERE id=5";
+    $valjund = mysqli_query($yhendus, $paring);
+    $rida = mysqli_fetch_assoc($valjund);
+    var_dump($rida);
+?>
+
+>>>>>>> 57befb2963cb260a7015e2f5090aa455a6223954
     <!-- sisu -->
 <div class="container mt-4">
   <div class="row">
   <div class="col-sm-6">
+<<<<<<< HEAD
     <img src="https://loremflickr.com/400/250/<?php echo $rida['mark']; ?>" class="card-img-top" alt="audi"></div>
   <div class="col-sm-6">
 
@@ -73,6 +85,21 @@
     <a href="#" class="btn btn-dark w-100">Rendi auto!</a>
 </div>
 </div>
+=======
+    <img src="https://loremflickr.com/400/250/<?php echo $rida['mark']; ?>" class="card-img-top" alt="audi">
+  </div>
+  <div class="col-sm-6">
+
+    <h2><?php echo $rida['mark']." ".$rida['model']; ?></h2>
+    <p>Mootor: <?php echo $rida['engine']; ?></p>
+    <p>Kütus: <?php echo $rida['fuel']; ?></p>
+    <p>Hind: <?php echo $rida['price']; ?>€/päev</p>
+    <a href="#" class="btn btn-dark w-100">Rendi auto</a>
+  </div>
+
+
+
+>>>>>>> 57befb2963cb260a7015e2f5090aa455a6223954
 
 
     </div>
