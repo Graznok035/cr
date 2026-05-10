@@ -55,3 +55,18 @@ SHOW VARIABLES LIKE 'bind_address';
 
 
 <img width="805" height="385" alt="image" src="https://github.com/user-attachments/assets/7a6112ce-928b-41ba-9d1f-a7d1eb8422b1" />
+ git --version
+  git clone (https://github.com/Graznok035/cr)
+  cd ~/cr
+  sudo mariadb -u root
+  CREATE DATABASE cr;
+  EXIT;
+  sudo mariadb -u root cr < cr.sql
+
+
+  sudo mariadb -u root
+  USE cr;
+  SHOW TABLES;
+  SELECT * FROM cars LIMIT 5;
+  EXIT;
+<img width="1056" height="534" alt="image" src="https://github.com/user-attachments/assets/6e2df768-72ae-4352-8ef3-4c01f9836714" />
