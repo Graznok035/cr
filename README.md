@@ -34,7 +34,7 @@ Failis /etc/mysql/mariadb.conf.d/50-server.cnf kus on read tekstiga
 
 lisasin read
 
-bind-address            = 127.0.0.1
+bind-address = 127.0.0.1
 local-infile = 0
 skip-name-resolve
 
