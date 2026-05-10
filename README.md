@@ -29,8 +29,8 @@ Remove test database and access to it? [Y/n] Y
 
 Failis /etc/mysql/mariadb.conf.d/50-server.cnf kus on read tekstiga
 
-# Instead of skip-networking the default is now to listen only on
-# localhost which is more compatible and is not less secure.
+ Instead of skip-networking the default is now to listen only on
+ localhost which is more compatible and is not less secure.
 
 lisasin read
 
