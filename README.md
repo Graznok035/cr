@@ -41,28 +41,19 @@ skip-name-resolve
 sudo systemctl restart mariadb
 
 ss -tlnp | grep 3306
-LISTEN 0      80          127.0.0.1:3306      0.0.0.0:*
 
 sudo mariadb -u root
 
 SHOW VARIABLES LIKE 'bind_address';
-+---------------+-----------+
-| Variable_name | Value     |
-+---------------+-----------+
-| bind_address  | 127.0.0.1 |
-+---------------+-----------+
-1 row in set (0.001 sec)
-
 
 <img width="805" height="385" alt="image" src="https://github.com/user-attachments/assets/7a6112ce-928b-41ba-9d1f-a7d1eb8422b1" />
- git --version
+  git --version
   git clone (https://github.com/Graznok035/cr)
   cd ~/cr
   sudo mariadb -u root
   CREATE DATABASE cr;
   EXIT;
   sudo mariadb -u root cr < cr.sql
-
 
   sudo mariadb -u root
   USE cr;
